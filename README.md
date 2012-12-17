@@ -1,10 +1,7 @@
 # ReactiveUI
 
-This library is an exploration I've been working on for several weeks on
-combining WPF Model-View-ViewModel paradigm with the Reactive Extensions for
-.NET (Rx). Combining these two make managing concurrency as well as expressing
-complicated interactions between objects possible in a declarative, functional
-way.
+Use the Reactive Extensions for .NET along with Silverlight, WPF, or 
+Windows Phone to create elegant, testable User Interfaces.
 
 This library is organized into several high-level assembly:
 
@@ -36,19 +33,19 @@ public class ColorChooserThatDoesntLikeGreen : ReactiveObject
   byte _Red;
   public byte Red {
     get { return _Red; }
-    set { this.RaiseAndSetIfChanged(x => x.Red, value); }
+    set { this.RaiseAndSetIfChanged(value); }
   }
 
   byte _Green;
   public byte Green {
     get { return _Green; }
-    set { this.RaiseAndSetIfChanged(x => x.Green, value); }
+    set { this.RaiseAndSetIfChanged(value); }
   }
 
   byte _Blue;
   public byte Blue {
     get { return _Blue; }
-    set { this.RaiseAndSetIfChanged(x => x.Blue, value); }
+    set { this.RaiseAndSetIfChanged(value); }
   }
 
   //
