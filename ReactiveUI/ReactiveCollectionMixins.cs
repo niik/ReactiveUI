@@ -434,9 +434,7 @@ namespace ReactiveUI
                         indexToSourceIndexMap.Insert(newDestinationIndex, newSourceIndex);
 
                         base.internalMove(currentDestinationIndex, newDestinationIndex);
-                    }
-                    else
-                    {
+                    } else {
                         indexToSourceIndexMap[currentDestinationIndex] = newSourceIndex;
                     }
                 } else {
